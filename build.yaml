@@ -18,7 +18,11 @@
 #     artifact-name: corne_left_with_studio
 #
 
-board: [ "nrf_micro13" ]
-shield: [ "blackholedox_left", "blackholedox_right" ]
+include:
+- board: "nrf_micro13"
+  shield: blackholeergo_left
+- board: "nrf_micro13"
+  shield: blackholeergo_right
 ---
+
 
