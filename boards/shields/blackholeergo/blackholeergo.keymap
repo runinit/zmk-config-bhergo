@@ -16,13 +16,13 @@
         default_layer {
             display-name = "Base";
 
-// ------------------------------------------------------------------------------------------------
-// |  =   | 1 |   2   | 3 | 4 |  5  |     | --------------- |     |  6  | 7 | 8 | 9 | 0 |   -   |
-// | DEL  | Q |   W   | E | R |  T  | LAY1 | MUTE | - | MUTE | LAY1 |  Y  | U | I | O | P |   \   |
-// | BSPC | A |   S   | D | F |  G  | ALT  | WIN  | - | ALT  | ESC  |  H  | J | K | L | ; |   '   |
-// | SHFT | Z |   X   | C | V |  B  | MEH  | HOME | - | PGUP | HYPR |  N  | M | , | . | / |  SHFT |
-// |  `   | ' | LOWER |  |  | SPC | BSPC | END  | - | PGDN | TAB  | ENT |  |  | [ | ] |  LAY1 |
-// ------------------------------------------------------------------------------------------------
+            // ------------------------------------------------------------------------------------------------
+            // |  =   | 1 |   2   | 3 | 4 |  5  |     | --------------- |     |  6  | 7 | 8 | 9 | 0 |   -   |
+            // | DEL  | Q |   W   | E | R |  T  | LAY1 | MUTE | - | MUTE | LAY1 |  Y  | U | I | O | P |   \   |
+            // | BSPC | A |   S   | D | F |  G  | ALT  | WIN  | - | ALT  | ESC  |  H  | J | K | L | ; |   '   |
+            // | SHFT | Z |   X   | C | V |  B  | MEH  | HOME | - | PGUP | HYPR |  N  | M | , | . | / |  SHFT |
+            // |  `   | ' | LOWER |  |  | SPC | BSPC | END  | - | PGDN | TAB  | ENT |  |  | [ | ] |  LAY1 |
+            // ------------------------------------------------------------------------------------------------
 
             bindings = <
                 &kp EQUAL &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp LEFT_ARROW &kp RIGHT_ARROW &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp MINUS
@@ -35,22 +35,22 @@
 
         layer_1 {
             bindings = <
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans;
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans;
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans;
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans;
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans;
+                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
             >;
         };
+
         layer_2 {
             bindings = <
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans;
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans;
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans;
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans;
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans;
+                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
             >;
         };
     };
 };
-
