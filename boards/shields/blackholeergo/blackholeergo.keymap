@@ -18,7 +18,7 @@
 
             // ------------------------------------------------------------------------------------------------
             // |  =   | 1 |   2   | 3 | 4 |  5  |     | --------------- |     |  6  | 7 | 8 | 9 | 0 |   -   |
-            // | DEL  | Q |   W   | E | R |  T  | LAY1 | MUTE | - | MUTE | LAY1 |  Y  | U | I | O | P |   \   |
+            // | DEL  | Q |   W   | E | R |  T  | 1 | C_MUTE | - | C_MUTE | 1   |  Y  | U | I | O | P |   \   |
             // | BSPC | A |   S   | D | F |  G  | ALT  | WIN  | - | ALT  | ESC  |  H  | J | K | L | ; |   '   |
             // | SHFT | Z |   X   | C | V |  B  | MEH  | HOME | - | PGUP | HYPR |  N  | M | , | . | / |  SHFT |
             // |  `   | ' | LOWER |  |  | SPC | BSPC | END  | - | PGDN | TAB  | ENT |  |  | [ | ] |  LAY1 |

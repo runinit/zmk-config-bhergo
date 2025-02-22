@@ -1,0 +1,20 @@
+name: Cleanup Old Workflow Runs
+
+on:
+  workflow_dispatch: # Allows manual triggering
+  schedule:
+    - cron: '0 0 * * *'  # Runs daily at midnight UTC
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write # needed to delete workflow runs
+    steps:
+      - name: Delete old workflow runs
+        uses: Mattraks/delete-workflow-runs@v2
+        with:
+          retain_days: 7
+          keep_minimum_runs: 6
+          delete_workflow_pattern: "" #leave blank to delete all, otherwise specify a workflow name, eg "build.yml"
+          delete_run_by_conclusion_pattern: "failure"
