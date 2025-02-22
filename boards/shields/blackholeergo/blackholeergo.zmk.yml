@@ -13,13 +13,15 @@ url: https://example.com
 # Add any features your keyboard supports here.
 # See https://zmk.dev/docs/development/hardware-integration/hardware-metadata-files#features
 features:
-- keys
-- studio # Remove this line if your keyboard will not support ZMK Studio
-- encoder
-- display
-- underglow
+  - keys
+  - studio # Remove this line if your keyboard will not support ZMK Studio
+  - encoder
+  - display
+  - underglow
 requires:
-- pro_micro
+  - pro_micro
+exposes:
+  - i2c_oled
 siblings:
-- blackholeergo_left
-- blackholedox_right
+  - blackholeergo_left
+  - blackholeergo_right
