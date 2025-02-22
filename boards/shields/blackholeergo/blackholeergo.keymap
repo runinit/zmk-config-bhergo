@@ -25,11 +25,11 @@
             // ------------------------------------------------------------------------------------------------
 
             bindings = <
-                &kp EQUAL &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp LEFT_ARROW &kp RIGHT_ARROW &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp MINUS
-                &kp DEL &kp Q &kp W &kp E &kp R &kp T &mo 1 &kp C_MUTE &kp C_MUTE &mo 1 &kp Y &kp U &kp I &kp O &kp P &kp BACKSLASH
-                &kp BACKSPACE &kp A &kp S &kp D &kp F &kp G &kp LEFT_ALT &kp LEFT_META &kp RIGHT_ALT &kp ESC &kp H &kp J &kp K &kp L &kp SEMICOLON &kp APOSTROPHE
-                &kp LEFT_SHIFT &kp Z &kp X &kp C &kp V &kp B &kp MEH &kp HOME &kp PAGE_UP &kp HYPR &kp N &kp M &kp COMMA &kp PERIOD &kp SLASH &kp RIGHT_SHIFT
-                &kp GRAVE &kp APOSTROPHE &mo 2 &kp LEFT_ARROW &kp RIGHT_ARROW &kp SPACE &kp BACKSPACE &kp END &kp PAGE_DOWN &kp TAB &kp ENTER &kp UP_ARROW &kp DOWN_ARROW &kp LEFT_BRACKET &kp RIGHT_BRACKET &mo 1
+                &kp EQUAL &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp LEFT &kp RIGHT &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp MINUS
+                &kp DEL &kp Q &kp W &kp E &kp R &kp T &mo 1 &kp C_MUTE &kp C_MUTE &mo 1 &kp Y &kp U &kp I &kp O &kp P &kp BSLH
+                &kp BSPC &kp A &kp S &kp D &kp F &kp G &kp LALT &kp LMETA &kp RALT &kp ESC &kp H &kp J &kp K &kp L &kp SEMI &kp APOS
+                &kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LMETA &kp HOME &kp PG_UP &kp RMETA &kp N &kp M &kp COMMA &kp DOT &kp SLASH &kp RSHFT
+                &kp GRAVE &kp APOS &mo 2 &kp LEFT &kp RIGHT &kp SPACE &kp BSPC &kp END &kp PG_DN &kp TAB &kp ENTER &kp UP &kp DOWN &kp LBKT &kp RBKT &mo 1
             >;
         };
 
