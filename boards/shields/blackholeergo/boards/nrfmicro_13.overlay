@@ -1,8 +1,5 @@
 #include <dt-bindings/led/led.h>
 
-    /dts-v1/;
-    /plugin/;
-
     / {
         chosen {
             zmk,display = &oled_display; // Choose oled as display
