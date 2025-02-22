@@ -19,9 +19,9 @@
 #
 
 include:
-- board: nrf_micro13
+- board: nrfmicro_13
   shield: blackholeergo_left
-- board: nrf_micro13
+- board: nrfmicro_13
   shield: blackholeergo_right
 
 
