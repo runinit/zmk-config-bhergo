@@ -1,6 +1,6 @@
 #include <dt-bindings/led/led.h>
 
-/ {
+{
     chosen {
         // zmk,display = &oled_display;  // NO! This should be in blackholeergo.dtsi
         // We'll define the display in the shield .dtsi, NOT here.
