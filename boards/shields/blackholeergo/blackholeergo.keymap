@@ -2,8 +2,8 @@
 // See https://zmk.dev/docs/development/hardware-integration/new-shield for more instructions.
 
 #include <behaviors.dtsi>
-//#include <dt-bindings/zmk/keys.h>
-//#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
 //#include <dt-bindings/zmk/ext_power.h>
 //#include <dt-bindings/zmk/outputs.h>
 
@@ -18,24 +18,24 @@
 
             // ------------------------------------------------------------------------------------------------
             // |  =   | 1 |   2   | 3 | 4 |  5  |     | --------------- |     |  6  | 7 | 8 | 9 | 0 |   -   |
-            // | DEL  | Q |   W   | E | R |  T  | 1 | C_MUTE | - | C_MUTE | 1   |  Y  | U | I | O | P |   \   |
+            // | DEL  | Q |   W   | E | R |  T  | Up | C_MUTE | - | C_MUTE | LO   |  Y  | U | I | O | P |   \   |
             // | BSPC | A |   S   | D | F |  G  | ALT  | WIN  | - | ALT  | ESC  |  H  | J | K | L | ; |   '   |
             // | SHFT | Z |   X   | C | V |  B  | MEH  | HOME | - | PGUP | HYPR |  N  | M | , | . | / |  SHFT |
             // |  `   | ' | LOWER |  |  | SPC | BSPC | END  | - | PGDN | TAB  | ENT |  |  | [ | ] |  LAY1 |
             // ------------------------------------------------------------------------------------------------
 
             bindings = <
-                &kp EQUAL &kp N1   &kp N2 &kp N3   &kp N4    &kp N5    &kp LEFT  &kp RIGHT   &kp N6     &kp N7   &kp N8  &kp N9  &kp N0    &kp MINUS
-                &kp DEL   &kp Q    &kp W  &kp E    &kp R     &kp T     &mo 1     &kp K_MUTE &kp K_MUTE &mo 1     &kp Y   &kp U  &kp I     &kp O   &kp P      &kp BSLH
-                &kp BSPC  &kp A    &kp S  &kp D    &kp F     &kp G     &kp LALT  &kp LMETA  &kp RALT   &kp ESC   &kp H   &kp J  &kp K     &kp L   &kp SEMI   &kp APOS
-                &kp LSHFT &kp Z    &kp X  &kp C    &kp V     &kp B     &kp LMETA &kp HOME   &kp PG_UP  &kp RMETA &kp N   &kp M  &kp COMMA &kp DOT  &kp SLASH &kp RSHFT
-                &kp GRAVE &kp APOS &mo 2  &kp LEFT &kp RIGHT &kp SPACE &kp BSPC  &kp END    &kp PG_DN  &kp TAB   &kp RET &kp UP &kp DOWN  &kp LBKT &kp RBKT  &mo 1
+                &kp EQUAL &kp N1   &kp N2 &kp N3   &kp N4    &kp N5    &kp LEFT                        &kp RIGHT  &kp N6   &kp N7 &kp N8   &kp N9   &kp N0    &kp MINUS
+                &kp DEL   &kp Q    &kp W  &kp E    &kp R     &kp T     &mo 1     &kp K_MUTE &kp K_MUTE &mo 2      &kp Y   &kp U  &kp I     &kp O   &kp P      &kp BSLH
+                &kp BSPC  &kp A    &kp S  &kp D    &kp F     &kp G     &kp LALT  &kp LMETA  &kp RALT   &kp ESC    &kp H   &kp J  &kp K     &kp L   &kp SEMI   &kp APOS
+                &kp LSHFT &kp Z    &kp X  &kp C    &kp V     &kp B     &kp LMETA &kp HOME   &kp PG_UP  &kp RMETA  &kp N   &kp M  &kp COMMA &kp DOT  &kp SLASH  &kp RSHFT
+                &kp GRAVE &kp APOS &mo 2  &kp LEFT &kp RIGHT &kp SPACE &kp BSPC  &kp END    &kp PG_DN  &kp TAB    &kp RET &kp UP &kp DOWN  &kp LBKT &kp RBKT   &mo 1
             >;
         };
 
-        layer_1 {
+        upper_layer {
             bindings = <
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans               &trans &trans &trans &trans &trans &trans &trans
                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
@@ -43,9 +43,9 @@
             >;
         };
 
-        layer_2 {
+        raise_layer {
             bindings = <
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans               &trans &trans &trans &trans &trans &trans &trans
                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
