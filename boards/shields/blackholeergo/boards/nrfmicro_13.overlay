@@ -5,7 +5,7 @@
         // zmk,display = &oled_display;  // NO! This should be in blackholeergo.dtsi
         // We'll define the display in the shield .dtsi, NOT here.
     };
-};
+}; // Added closing brace and semicolon for the root node
 
 &pinctrl {
     // I2C Pin Control (for OLED)
