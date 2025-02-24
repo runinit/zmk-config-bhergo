@@ -3,6 +3,7 @@
 
     / {
         chosen {
+            zmk.physical-layout = &default_layout;
             zmk,kscan = &kscan0;
             zml.oled = &oled;
             zmk,matrix-transform = &default_transform;
@@ -68,7 +69,7 @@
 
     &i2c0 {
         status = "okay";
-        
+
         oled: ssd1306@3c {
             compatible = "solomon,ssd1306fb";
             reg = <0x3c>;

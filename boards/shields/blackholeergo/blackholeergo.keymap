@@ -30,7 +30,9 @@
     &kp LSHFT &kp Z     &kp X    &kp C      &kp V     &kp B     &kp LMETA    &kp HOME         &kp PG_UP  &kp RMETA      &kp N      &kp M      &kp COMMA &kp DOT  &kp SLASH &kp RSHFT
     &kp GRAVE &kp APOS  &kp LCTRL &kp LEFT &kp RIGHT &kp SPACE       &kp BSPC          &kp END    &kp PG_DN      &kp TAB    &kp RET    &kp UP   &kp DOWN &kp LBKT  &kp RBKT  &kp RCTRL
             >;
+
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            
         };
     };
 };
