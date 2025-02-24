@@ -12,6 +12,7 @@ features:
   - keys
   - studio
   - encoder
+  - display
   - underglow
 siblings:
   - blackholeergo_left
