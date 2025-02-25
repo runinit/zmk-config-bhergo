@@ -1,7 +1,7 @@
 if SHIELD_BLACKHOLEERGO_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "BlackHoleErgo"
+    default "BlackHoleErgo"--bindings-dirs;/tmp/zmk-config/zmk/app/module/dts/bindings;/tmp/zmk-config/zmk/app/dts
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
