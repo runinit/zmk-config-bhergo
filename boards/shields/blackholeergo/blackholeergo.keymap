@@ -1,8 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 
-&led_strip { chain-length = <38>; };
-
 / {
     keymap {
         compatible = "zmk,keymap";
